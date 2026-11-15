@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "tropiezo",
+  "version": "${version}",
+  "name": "Tropiezo",
+  "description": "Corré y tropezate: subir un píxel, flores, camas y caídas te tiran al piso.",
+  "authors": ["Nico"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.nico.tropiezo.TropiezoMod"],
+    "client": ["dev.nico.tropiezo.client.TropiezoClient"]
+  },
+  "mixins": ["tropiezo.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
